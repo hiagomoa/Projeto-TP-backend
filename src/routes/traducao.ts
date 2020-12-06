@@ -33,11 +33,11 @@ axios({
         'text': text
     }],
     responseType: 'json'
-}).then(function(response){
-    console.log(JSON.stringify(response.data, null, 4));
-    console.log("PPPPP" + response.data);
-    return res.status(200).json(response.data);
-})
+}).then((response) => {
+        console.log(JSON.stringify(response.data, null, 4));
+        console.log("PPPPP" + response.data);
+        return res.status(200).json(response.data);
+    })
 
 });
 export default traduction;
